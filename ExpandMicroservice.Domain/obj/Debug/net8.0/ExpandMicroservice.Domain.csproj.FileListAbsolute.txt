@@ -1,0 +1,15 @@
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMicroservice.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMicroservice.Domain.AssemblyInfoInputs.cache
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMicroservice.Domain.AssemblyInfo.cs
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMicroservice.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\bin\Debug\net8.0\ExpandMicroservice.Domain.deps.json
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\bin\Debug\net8.0\ExpandMicroservice.Domain.dll
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\bin\Debug\net8.0\ExpandMicroservice.Domain.pdb
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\bin\Debug\net8.0\ExpandMicroservice.ValueObjects.dll
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\bin\Debug\net8.0\ExpandMicroservice.ValueObjects.pdb
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMicroservice.Domain.csproj.AssemblyReference.cache
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMi.B349D978.Up2Date
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMicroservice.Domain.dll
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\refint\ExpandMicroservice.Domain.dll
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ExpandMicroservice.Domain.pdb
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.Domain\obj\Debug\net8.0\ref\ExpandMicroservice.Domain.dll

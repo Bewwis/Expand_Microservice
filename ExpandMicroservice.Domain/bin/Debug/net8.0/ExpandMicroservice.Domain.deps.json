@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ExpandMicroservice.Domain/1.0.0": {
+        "dependencies": {
+          "ExpandMicroservice.ValueObjects": "1.0.0"
+        },
+        "runtime": {
+          "ExpandMicroservice.Domain.dll": {}
+        }
+      },
+      "ExpandMicroservice.ValueObjects/1.0.0": {
+        "runtime": {
+          "ExpandMicroservice.ValueObjects.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExpandMicroservice.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExpandMicroservice.ValueObjects/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
