@@ -1,0 +1,11 @@
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\ExpandMicroservice.ValueObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\ExpandMicroservice.ValueObjects.AssemblyInfoInputs.cache
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\ExpandMicroservice.ValueObjects.AssemblyInfo.cs
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\ExpandMicroservice.ValueObjects.csproj.CoreCompileInputs.cache
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\bin\Debug\net8.0\ExpandMicroservice.ValueObjects.deps.json
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\bin\Debug\net8.0\ExpandMicroservice.ValueObjects.dll
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\bin\Debug\net8.0\ExpandMicroservice.ValueObjects.pdb
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\ExpandMicroservice.ValueObjects.dll
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\refint\ExpandMicroservice.ValueObjects.dll
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\ExpandMicroservice.ValueObjects.pdb
+C:\Users\dachn\Desktop\Sharp\ExpandMicroservice\Domain\ExpandMicroservice.ValueObjects\obj\Debug\net8.0\ref\ExpandMicroservice.ValueObjects.dll
