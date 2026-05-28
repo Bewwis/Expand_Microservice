@@ -14,10 +14,10 @@ public class Expense : Entity<Guid>
     public User User { get; set; }
     public Guid UserId { get; private set; }
 
-    protected Expense() : base(Guid.NewGuid()) { }
+    protected Expense() : base() { }
 
     public Expense(User user, Amount amount, Category category, Description? description = null)
-        : base(Guid.NewGuid())
+        : base()
     {
         User = user ?? throw new ArgumentNullValueException(nameof(user));
         UserId = user.Id;

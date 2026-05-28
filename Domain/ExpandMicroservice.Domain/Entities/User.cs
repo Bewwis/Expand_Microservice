@@ -6,16 +6,16 @@ namespace ExpandMicroservice.Domain.Entities;
 
 public class User : Entity<Guid>
 {
-    private readonly List<Expense> _expenses = new();
-    private readonly List<Category> _categories = new();
+    private readonly ICollection<Expense> _expenses = new List<Expense>();
+    private readonly ICollection<Category> _categories = new List<Category>();
 
     public Username Username { get; private set; }
-    public IReadOnlyCollection<Expense> Expenses => _expenses.AsReadOnly();
-    public IReadOnlyCollection<Category> Categories => _categories.AsReadOnly();
+    public IReadOnlyCollection<Expense> Expenses => _expenses.ToList().AsReadOnly();
+    public IReadOnlyCollection<Category> Categories => _categories.ToList().AsReadOnly();
 
-    protected User() : base(Guid.NewGuid()) { }
+    protected User() : base() { }
 
-    public User(Username username) : base(Guid.NewGuid())
+    public User(Username username) : base()
     {
         Username = username ?? throw new ArgumentNullValueException(nameof(username));
     }
@@ -31,7 +31,10 @@ public class User : Entity<Guid>
 
     public Category CreateCategory(CategoryName name)
     {
-        var category = new Category(name);
+        if (_categories.Any(c => c.Name.Value == name.Value))
+            throw new DuplicateCategoryException(name, this);
+
+        var category = new Category(this, name);
         _categories.Add(category);
         return category;
     }

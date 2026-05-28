@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ExpandMicroservice.Domain.Entities;
-using ExpandMicroservice.ValueObjects;
+﻿using ExpandMicroservice.Domain.Entities;
+using ExpandMicroservice.Domain.Exceptions;
 using ExpandMicroservice.Infrastructure.EntityFramework;
+using ExpandMicroservice.ValueObjects;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExpandMicroservice.DomainApp;
 
@@ -22,17 +23,24 @@ internal class Program
             context.SaveChanges();
             Console.WriteLine($"Пользователь: {user.Username.Value}");
 
-            var foodCategory = new Category(new CategoryName("Еда"));
-            var transportCategory = new Category(new CategoryName("Транспорт"));
-            context.Categories.AddRange(foodCategory, transportCategory);
+            var foodCategory = user.CreateCategory(new CategoryName("Еда"));
+            var transportCategory = user.CreateCategory(new CategoryName("Транспорт"));
             context.SaveChanges();
             Console.WriteLine($"Созданы категории: {foodCategory.Name.Value}, {transportCategory.Name.Value}");
 
-            var expense1 = new Expense(user, new Amount(350), foodCategory, new Description("Обед в столовой"));
-            var expense2 = new Expense(user, new Amount(120), transportCategory, new Description("Метро"));
-            var expense3 = new Expense(user, new Amount(500), foodCategory, new Description("Ужин"));
+            try
+            {
+                var duplicateCategory = user.CreateCategory(new CategoryName("Еда"));
+            }
+            catch (DuplicateCategoryException ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}");
+            }
 
-            context.Expenses.AddRange(expense1, expense2, expense3);
+            var expense1 = user.CreateExpense(new Amount(350), foodCategory, new Description("Обед в столовой"));
+            var expense2 = user.CreateExpense(new Amount(120), transportCategory, new Description("Метро"));
+            var expense3 = user.CreateExpense(new Amount(500), foodCategory, new Description("Ужин"));
+
             context.SaveChanges();
 
             Console.WriteLine($"\nДобавлены расходы:");

@@ -7,11 +7,15 @@ namespace ExpandMicroservice.Domain.Entities;
 public class Category : Entity<Guid>
 {
     public CategoryName Name { get; private set; }
+    public User User { get; private set; }
+    public Guid UserId { get; private set; }
 
-    protected Category() : base(Guid.NewGuid()) { }
+    protected Category() : base() { }
 
-    public Category(CategoryName name) : base(Guid.NewGuid())
+    public Category(User user, CategoryName name) : base()
     {
+        User = user ?? throw new ArgumentNullValueException(nameof(user));
+        UserId = user.Id;
         Name = name ?? throw new ArgumentNullValueException(nameof(name));
     }
 
@@ -24,3 +28,4 @@ public class Category : Entity<Guid>
         return true;
     }
 }
+        
