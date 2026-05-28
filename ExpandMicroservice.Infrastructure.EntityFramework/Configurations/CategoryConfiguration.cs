@@ -19,5 +19,10 @@ public class CategoryConfiguration : IEntityTypeConfiguration<Category>
                 name => name.Value,
                 value => new CategoryName(value))
             .HasMaxLength(CategoryNameValidator.MaxLength);
+
+        builder.HasOne(c => c.User)
+            .WithMany(u => u.Categories)
+            .HasForeignKey(c => c.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }
